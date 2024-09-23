@@ -1,0 +1,252 @@
+
+:root{
+
+    /* League Spartan font family */
+    --font-family-League-Spartan:'League Spartan';
+
+    /* Colors */
+
+     /* Primary */
+    
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    
+     /* Neutral */
+    
+    --Dark-Grayis-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+
+    /* Font size: 15px */
+    --Font-size: 15px;
+
+}
+
+*{
+
+    box-sizing: border-box;
+
+}
+
+p{
+    font-size: var(--Font-size);
+}
+
+body{
+
+    font-family: var(--font-family-League-Spartan);
+
+}
+
+main{
+
+    display: grid;
+    grid-template-columns: auto ;
+    text-align: center;
+     padding-top: 8%; 
+    max-width: 95%;
+     margin: auto;
+    background-color: transparent;
+}
+
+
+.products-title{
+
+    padding: 0 12%;
+
+}
+
+.products-title h1{
+    color: var(--Very-Dark-Magenta);
+    line-height: 0.8em;
+    font-weight: 700;
+}
+
+.products-title p{
+    color: var(--Dark-Grayis-Magenta);
+    line-height: 1.2em;
+    margin-bottom: 0;
+}
+
+.rates-stars {
+    margin: 2em 0;
+}
+
+.rates-stars >div{
+
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 0.8em 0 ;
+    margin: 0.7em 0;
+    border-radius: 0.5em;
+}
+
+
+.rates-stars >div >div img{
+
+margin: 0;
+}
+
+
+.rates-stars div img{
+
+    margin: 2%;
+
+}
+
+.rates-stars div p{
+
+    margin: 5px;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.profiles{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1%;
+}
+
+.profiles .profile{
+
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 7px;
+    color: var(--White) ;
+    padding: 23px;
+    text-align: left;
+}
+
+ .profile .image-container{
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+ } 
+
+ .profile .image-container img{
+
+    border-radius: 100%;
+    width: 40px;
+ }
+
+ .profile .image-container section{
+
+    margin: 0px 9%;
+    min-width: 90px;
+ }
+
+ .profile .image-container section p
+ {
+
+    font-weight: 500;
+    line-height: 3px;
+
+ }
+
+ 
+
+ .image-container section :last-child{
+
+    color: var(--Soft-Pink);
+  
+ }
+
+ .profile >p{
+
+    line-height: 1.3em;
+
+ }
+
+@media(min-width:401px){
+
+
+    .profiles{
+
+        grid-template-columns: auto auto ;
+    }
+
+
+}
+
+
+
+
+ @media(min-width:700px){
+
+
+    main{
+
+        grid-template-columns: auto auto;
+        grid-template-areas: "title rates" "profile profile";
+        text-align: left;
+        max-width: 900px;
+    }
+
+    .products-title{
+
+        grid-area: title;
+        max-width: 88%;
+    }
+
+    .rates-stars{
+
+        grid-area: rates;
+        width: 95%;
+    }
+
+    .rates-stars > div{
+
+        width: 85%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .rates-stars >div:nth-of-type(1){
+
+            margin-left: 0;
+
+    }
+
+
+    .rates-stars >div:nth-of-type(2){
+
+        margin-left:10%;
+
+
+
+ }
+
+ .rates-stars >div:nth-of-type(3){
+
+    margin-left:20%;
+
+
+
+}
+
+.rates-stars >div >div{
+
+    margin: 0 27px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.rates-stars > div> div img{
+
+    margin: 2%;
+
+
+}
+
+
+.profiles{
+
+    grid-area: profile;
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+ }
