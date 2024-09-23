@@ -105,6 +105,7 @@ margin: 0;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1%;
+    min-height: fit-content;
 }
 
 .profiles .profile{
