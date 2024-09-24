@@ -35,7 +35,12 @@ p{
 body{
 
     font-family: var(--font-family-League-Spartan);
-
+    background-image: url(./images/bg-pattern-top-mobile.svg),url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat ,no-repeat;
+    background-position:0% 0% ,100% 100%;
+    background-size: 40% ,65%;
+    margin: 0;
+    padding: 0;
 }
 
 main{
@@ -43,7 +48,7 @@ main{
     display: grid;
     grid-template-columns: auto ;
     text-align: center;
-     padding-top: 8%; 
+     padding-top: 6%; 
     max-width: 95%;
      margin: auto;
     background-color: transparent;
@@ -173,6 +178,12 @@ margin: 0;
 
 
  @media(min-width:700px){
+
+    body{
+
+        background-image: url(./images/bg-pattern-top-desktop.svg) ,url(./images/bg-pattern-bottom-desktop.svg);
+
+    }
 
 
     main{
